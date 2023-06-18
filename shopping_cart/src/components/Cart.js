@@ -3,14 +3,16 @@
 import { CartCard } from './templates/ProductCards';
 import CartStickyBar from './CartStickyBar';
 
-const CartItem = ({ array, onClick }) => {
+const CartItem = ({ array, decrease, remove }) => {
     return (
-        <div>
+        <div className='place-content-center grid gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-gray-500 pt-4 pb-3'>
             {array.map((item) => {
                 return (
                     <CartCard
                         item={item}
-                        onClick={onClick}
+                        decrease={decrease}
+                        remove={remove}
+                        key={item.id}
                     ></CartCard>
                 );
             })}
@@ -18,14 +20,19 @@ const CartItem = ({ array, onClick }) => {
     );
 };
 
-const Cart = ({ array, onClick, value }) => {
+const Cart = ({ array, decrease, total, remove, empty, zero }) => {
     return (
         <div>
             <CartItem
                 array={array}
-                onClick={onClick}
+                decrease={decrease}
+                remove={remove}
             ></CartItem>
-            <CartStickyBar value={value}></CartStickyBar>
+            <CartStickyBar
+                value={total}
+                empty={empty}
+                zero={zero}
+            ></CartStickyBar>
         </div>
     );
 };

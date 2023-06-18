@@ -1,26 +1,30 @@
 /** @format */
 
-const Total = ({ value }) => {
+const Empty = ({ empty, zero }) => {
     return (
-        <div>
-            <p>total: {value}</p>
-        </div>
+        <button
+            onClick={() => {
+                empty();
+                zero();
+            }}
+        >
+            Empty
+        </button>
     );
-};
-
-const Empty = () => {
-    return <button>Empty</button>;
 };
 
 const Pay = () => {
     return <button>Pay</button>;
 };
 
-const CartStickyBar = ({ value }) => {
+const CartStickyBar = ({ value, empty, zero }) => {
     return (
-        <div>
-            <Total value={value}></Total>
-            <Empty></Empty>
+        <div className='fixed bottom-0 inset-x-0'>
+            <strong>Total: {value}</strong>
+            <Empty
+                zero={zero}
+                empty={empty}
+            ></Empty>
             <Pay></Pay>
         </div>
     );

@@ -1,22 +1,22 @@
 /** @format */
 
 import { ShopCard } from './templates/ProductCards';
-import ShopStickyBar from './ShopStickyBar';
 
-const Products = ({ object }) => {
-    return (
-        <div>
-            {object.map((item) => {
-                return <ShopCard item={item}></ShopCard>;
-            })}
-        </div>
-    );
-};
+import { NavLink } from 'react-router-dom';
 
 const ShoppingPage = ({ object }) => {
     return (
-        <div>
-            <Products object={object}></Products>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+            {object.map((item) => {
+                return (
+                    <NavLink
+                        to={item.id}
+                        key={item.id}
+                    >
+                        <ShopCard item={item}></ShopCard>
+                    </NavLink>
+                );
+            })}
         </div>
     );
 };

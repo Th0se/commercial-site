@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Banner = () => {
     return (
         <div>
-            <h1>Serene Grocery</h1>
+            <h1>Serena Grocery</h1>
             <h2>All your grocery needs, straight from farmers</h2>
         </div>
     );
@@ -23,7 +23,7 @@ const NavBar = () => {
     );
 };
 
-const CartButton = ({ onClick }) => {
+const CartButton = ({}) => {
     return (
         <NavLink to='/cart'>
             <Icon
@@ -36,7 +36,7 @@ const CartButton = ({ onClick }) => {
 
 const ShopStickyBar = () => {
     return (
-        <div>
+        <div className='sticky top-0'>
             <Banner></Banner>
             <NavBar></NavBar>
             <CartButton></CartButton>
