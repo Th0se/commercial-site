@@ -5,7 +5,7 @@ import CartStickyBar from './CartStickyBar';
 
 const CartItem = ({ array, decrease, remove }) => {
     return (
-        <div className='place-content-center grid gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-gray-500 pt-4 pb-3'>
+        <div className='place-content-center grid gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-gray-500 pt-4 pb-3 p-2'>
             {array.map((item) => {
                 return (
                     <CartCard

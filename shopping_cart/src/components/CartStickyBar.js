@@ -7,6 +7,7 @@ const Empty = ({ empty, zero }) => {
                 empty();
                 zero();
             }}
+            className='border-block border'
         >
             Empty
         </button>
@@ -14,13 +15,15 @@ const Empty = ({ empty, zero }) => {
 };
 
 const Pay = () => {
-    return <button>Pay</button>;
+    return <button className='border-block border'>Pay</button>;
 };
 
 const CartStickyBar = ({ value, empty, zero }) => {
     return (
-        <div className='fixed bottom-0 inset-x-0'>
-            <strong>Total: {value}</strong>
+        <div className='fixed bottom-0 inset-x-0 grid grid-cols-2 grid-row-2 font-bold bg-emerald-400'>
+            <strong className='text-center col-span-2 border-block border'>
+                Total: {value} Wang
+            </strong>
             <Empty
                 zero={zero}
                 empty={empty}
