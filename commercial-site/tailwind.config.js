@@ -8,7 +8,11 @@ export const content = ['./src/**/*.{js,jsx,ts,tsx}'];
 export const theme = {
     extend: {
         screens: {
+<<<<<<< HEAD
             sm: { min: '640px', max: '767px' },
+=======
+            sm: { min: '320px', max: '767px' },
+>>>>>>> 7bf4db5 (- Update dependencies to new versions.)
         },
     },
 };
