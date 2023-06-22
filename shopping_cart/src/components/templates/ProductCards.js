@@ -76,7 +76,7 @@ const DetailCard = ({ cart, total }) => {
             <img
                 src={item[0].image}
                 alt='product'
-                className='w-10/12 md:w-2/4 justify-center md:row-span-2'
+                className='w-10/12 md:w-2/4 justify-center md:row-span-2 py-1'
             ></img>
             <div className='p-2 grid'>
                 <strong>{item[0].title}</strong>

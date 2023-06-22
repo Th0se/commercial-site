@@ -23,7 +23,7 @@ const NavBar = () => {
             <div className='flex items-center justify-end'>
                 <NavLink
                     className='inline-block border-solid border-2 border-black mx-1 text-center p-1'
-                    to='/'
+                    to='/home'
                 >
                     Home
                 </NavLink>
