@@ -13,6 +13,9 @@ function App() {
     const handleAddToCart = (item) => {
         // Add item to cart.
         setCartContent([...cartContent, item]);
+        alert(
+            `Product added to cart. You don't see any change in this page, but please don't worry: the changes happen on the other page. See the cart page to confirm.`
+        );
     };
     const handleRemoveFromCart = (item) => {
         // Remove item from cart.
