@@ -72,7 +72,7 @@ const DetailCard = ({ cart, total }) => {
     };
 
     return (
-        <div className='grid place-items-center md:grid-cols-2 bg-emerald-500'>
+        <div className='grid place-items-center md:grid-cols-2 bg-emerald-500 pb-14'>
             <img
                 src={item[0].image}
                 alt='product'
@@ -124,14 +124,12 @@ const DetailCard = ({ cart, total }) => {
                 onClick={() => {
                     cart({ ...item[0], quantity: quantity });
                     total(item[0].price * quantity);
+                    setQuantity(0);
                 }}
-                className='md:col-span-2'
+                className='md:col-span-2 border-solid border-2 px-4 py-px'
                 alt='add to cart'
             >
-                <Icon
-                    path={mdilPlus}
-                    size={2}
-                ></Icon>
+                Add to cart
             </button>
         </div>
     );

@@ -7,15 +7,13 @@ import ShoppingPage from './components/ShoppingPage';
 import products from './components/products';
 import Cart from './components/Cart';
 import { DetailCard } from './components/templates/ProductCards';
+import CartStickyBar from './components/CartStickyBar';
 
 function App() {
     const [cartContent, setCartContent] = useState([]);
     const handleAddToCart = (item) => {
         // Add item to cart.
         setCartContent([...cartContent, item]);
-        alert(
-            `Product added to cart. You don't see any change in this page, but please don't worry: the changes happen on the other page. See the cart page to confirm.`
-        );
     };
     const handleRemoveFromCart = (item) => {
         // Remove item from cart.
@@ -67,10 +65,17 @@ function App() {
                 <Route
                     path='/shop/:id'
                     element={
-                        <DetailCard
-                            cart={handleAddToCart}
-                            total={handleAddTotalPrice}
-                        ></DetailCard>
+                        <>
+                            <DetailCard
+                                cart={handleAddToCart}
+                                total={handleAddTotalPrice}
+                            ></DetailCard>
+                            <CartStickyBar
+                                value={totalPrice}
+                                zero={handleResetTotalPrice}
+                                empty={handleEmptyCart}
+                            ></CartStickyBar>
+                        </>
                     }
                 ></Route>
             </Routes>
