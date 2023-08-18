@@ -6,7 +6,11 @@ import { createThemes } from 'tw-colors';
 
 export const content = ['./src/**/*.{js,jsx,ts,tsx}'];
 export const theme = {
-    extend: {},
+    extend: {
+        screens: {
+            sm: { min: '640px', max: '767px' },
+        },
+    },
 };
 export const plugins = [
     createThemes({

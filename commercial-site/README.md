@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+<!-- @format -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Screen size
 
-## Available Scripts
+<!-- prettier-ignore -->
+Screen size for small screen has been fixed to the range of 640 pixels to 767 pixels so so that styles for smaller screens no longer affect larger screens.
 
-In the project directory, you can run:
+# Themes
 
-### `npm start`
+So far there are four themes available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- prettier-ignore -->
+-   **Light**
+    A bright interface, good for bright environment.
+-   **Dark** 
+    A classic, black background and white text. Good for dark environment.
+-   **Pastel Chaos**
+    An alternative theme for those who are exhausted of light/dark dicothomy. Energetic.
+-   **Amethyst Aurora** 
+    An alternative theme for those who are exhausted of light/dark dicothomy. Calmer than Pastel Chaos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+Listed in alphabethical order.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| File | Component | Detail | Prop | Explanation |
+| ---- | --------- | ------ | ---- | ----------- |
 
-### `npm run build`
+## Images
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Free stock photos taken from Pexels.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| File                                  | Attribution                                                                                                    |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| pexels-engin-akyurt-2899682.jpg       | Photo by Engin Akyurt: https://www.pexels.com/photo/red-tomatoes-on-board-2899682                              |
+| pexels-mark-stebnicki-2253316.jpg     | Photo by Mark Stebnicki: https://www.pexels.com/photo/bunch-of-red-and-orange-apples-2253316/                  |
+| pexels-julie-aagaard-2294477.jpg      | Photo by julie aagaard: https://www.pexels.com/photo/photo-of-pile-of-oranges-2294477/                         |
+| pexels-lisa-fotios-1231023.jpg        | Photo by Lisa Fotios: https://www.pexels.com/photo/close-up-photo-of-strawberries-1231023/                     |
+| pexels-karolina-grabowska-4966362.jpg | Photo by Karolina Grabowska: https://www.pexels.com/photo/photo-of-sliced-watermelon-4966362/                  |
+| pexels-julie-aagaard-2294471.jpg      | Photo by julie aagaard: https://www.pexels.com/photo/bunch-of-mangoes-2294471/                                 |
+| pexels-kio-1093038.jpg                | Photo by Kio: https://www.pexels.com/photo/selective-focus-photo-of-bunch-of-bananas-on-black-surface-1093038/ |
+| pexels-kaichieh-chan-708777.jpg       | Photo by Kai-Chieh Chan: https://www.pexels.com/photo/grape-fruits-708777/                                     |
