@@ -1,5 +1,5 @@
 /** @format */
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './components/About';
@@ -67,7 +67,7 @@ function App() {
         return { light, dark, pastelChaos, amethystAurora };
     })();
     return (
-        <BrowserRouter basename='/commercial-site'>
+        <BrowserRouter basename='/shopping_cart'>
             <Routes>
                 <Route
                     path='/about'

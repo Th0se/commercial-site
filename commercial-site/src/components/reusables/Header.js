@@ -69,7 +69,7 @@ const Logo = () => {
                 className='text-2xl font-extrabold'
                 aria-hidden='true'
             >
-                Azavehyrs
+                Vahryesa
             </h1>
         </div>
     );
