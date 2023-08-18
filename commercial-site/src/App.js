@@ -67,7 +67,7 @@ function App() {
         return { light, dark, pastelChaos, amethystAurora };
     })();
     return (
-        <BrowserRouter basename='/commercial-site'>
+        <BrowserRouter basename='/shopping_cart'>
             <Routes>
                 <Route
                     path='/about'
