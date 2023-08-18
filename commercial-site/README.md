@@ -19,14 +19,36 @@ So far there are four themes available.
 -   **Amethyst Aurora** 
     An alternative theme for those who are exhausted of light/dark dicothomy. Calmer than Pastel Chaos.
 
-## Components
+# Components
 
 Listed in alphabethical order.
 
-| File | Component | Detail | Prop | Explanation |
-| ---- | --------- | ------ | ---- | ----------- |
+| File           | Component       | Detail                                                                              | Prop               | Explanation                                                |
+| -------------- | --------------- | ----------------------------------------------------------------------------------- | ------------------ | ---------------------------------------------------------- |
+| About.js       | `<About>`       | 'about' page.                                                                       | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
+| Cart.js        | `<Cart>`        | 'cart' page.                                                                        | `cart`             | Array. Contains items user put in the cart.                |
+|                |                 |                                                                                     | `handleCart`       | Function. Passed to `<CartItem>`.                          |
+|                |                 |                                                                                     | `handleTotalPrice` | Function. Passed to `<CartItem>`.                          |
+|                |                 |                                                                                     | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
+|                |                 |                                                                                     | `totalPrice`       | Number. Total price of all items currently in the cart.    |
+|                | `<CartItem>`    | Item cards in the 'cart' page.                                                      | `handleCart`       | Function. Manipulates cart.                                |
+|                |                 |                                                                                     | `handleTotalPrice` | Function. Manipulates totalPrice                           |
+|                |                 |                                                                                     | `item`             | Object. Item displayed in the card.                        |
+| Footer.js      | `<Contact>`     | Contains contact information.                                                       | `theme`            | String. Passed to `<GithubLogo>`.                          |
+|                | `<Disclaimer>`  | Contains diclaimer.                                                                 |                    |                                                            |
+|                | `<Footer>`      | 'footer' page.                                                                      | `theme`            | String. Passed to `<Contact>`.                             |
+|                | `<GithubLogo`   | The Github logo preceeding the repository's URL.                                    | `theme`            | String. Decides which variant of the logo appears.         |
+| Header.js      | `<About>`       | Navigational button leading to the 'about' page.                                    |                    |                                                            |
+|                | `<Cart>`        | Navigation button leading to the 'cart' page.                                       |                    |                                                            |
+|                | `<Header>`      | Navigational bar containing navigational buttons.                                   |                    |                                                            |
+|                | `<Logo>`        | Website's logo                                                                      |                    |                                                            |
+|                | `<Shop>`        | Navigational button leading to the 'shop' page.                                     |                    |                                                            |
+| ProductPage.js | `<ProductPage>` | Page displaying product details and the button to buy a set quantity of the product | `handleCart`       | Function. Manipulates cart.                                |
+|                |                 |                                                                                     | `handleTotalPrice` | Function. Manipulates total price.                         |
+|                |                 |                                                                                     | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
+| Shop.js        | `<Shop>`        | 'shop' page.                                                                        | `<theme>`          | String. Decides page's colour palet. Passed to `<Footer>`. |
 
-## Images
+# Images
 
 Free stock photos taken from Pexels.com
 

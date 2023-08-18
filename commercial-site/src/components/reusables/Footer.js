@@ -38,8 +38,8 @@ const Contact = ({ theme }) => {
                 rel='noreferrer'
                 className='text-center focus:bg-text focus:text-primaryBackground'
             >
-                <GithubLogo theme={theme}></GithubLogo>Open this website's
-                Github repository in a new tab
+                <GithubLogo theme={theme}></GithubLogo>
+                https://github.com/Th0se/shopping_cart
             </a>
         </div>
     );

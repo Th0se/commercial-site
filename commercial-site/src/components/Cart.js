@@ -2,7 +2,7 @@
 import Header from './reusables/Header';
 import Footer from './reusables/Footer';
 
-const CartItem = ({ item, cart, totalPrice, handleCart, handleTotalPrice }) => {
+const CartItem = ({ item, handleCart, handleTotalPrice }) => {
     return (
         <div className='grid bg-tertiaryBackground sm:grid-cols-2'>
             <img
@@ -48,8 +48,6 @@ const Cart = ({ cart, theme, totalPrice, handleCart, handleTotalPrice }) => {
                             handleCart={handleCart}
                             handleTotalPrice={handleTotalPrice}
                             key={item.id}
-                            cart={cart}
-                            totalPrice={totalPrice}
                         ></CartItem>
                     ))}
                 </div>
