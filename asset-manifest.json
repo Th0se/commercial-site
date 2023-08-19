@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/commercial-site/static/css/main.13b65ee8.css",
+    "main.css": "/commercial-site/static/css/main.91b35b6e.css",
     "main.js": "/commercial-site/static/js/main.d062321e.js",
     "static/media/pexels-engin-akyurt-2899682.jpg": "/commercial-site/static/media/pexels-engin-akyurt-2899682.172fa9824a8a42213b26.jpg",
     "static/media/pexels-karolina-grabowska-4966362.jpg": "/commercial-site/static/media/pexels-karolina-grabowska-4966362.664aa4c92be1101c62e3.jpg",
@@ -11,11 +11,11 @@
     "static/media/pexels-julie-aagaard-2294471.jpg": "/commercial-site/static/media/pexels-julie-aagaard-2294471.67523f7b1a9d2bb338d1.jpg",
     "static/media/pexels-kio-1093038.jpg": "/commercial-site/static/media/pexels-kio-1093038.e5fb2a8731d303bd14d1.jpg",
     "index.html": "/commercial-site/index.html",
-    "main.13b65ee8.css.map": "/commercial-site/static/css/main.13b65ee8.css.map",
+    "main.91b35b6e.css.map": "/commercial-site/static/css/main.91b35b6e.css.map",
     "main.d062321e.js.map": "/commercial-site/static/js/main.d062321e.js.map"
   },
   "entrypoints": [
-    "static/css/main.13b65ee8.css",
+    "static/css/main.91b35b6e.css",
     "static/js/main.d062321e.js"
   ]
 }
