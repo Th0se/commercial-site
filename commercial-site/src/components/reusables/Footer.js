@@ -24,7 +24,7 @@ const GithubLogo = ({ theme }) => {
 
 const Contact = ({ theme }) => {
     return (
-        <div>
+        <div className='text-clip'>
             <p>
                 <strong>Telephone: </strong>555-555-5555
             </p>

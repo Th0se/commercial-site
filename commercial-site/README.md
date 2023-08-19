@@ -25,9 +25,11 @@ Listed in alphabethical order.
 
 | File           | Component       | Detail                                                                              | Prop               | Explanation                                                |
 | -------------- | --------------- | ----------------------------------------------------------------------------------- | ------------------ | ---------------------------------------------------------- |
-| About.js       | `<About>`       | 'about' page.                                                                       | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
+| About.js       | `<About>`       | 'about' page.                                                                       | `handleTheme`      | Function. Passed to `<Footer>`                             |
+|                |                 |                                                                                     | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
 | Cart.js        | `<Cart>`        | 'cart' page.                                                                        | `cart`             | Array. Contains items user put in the cart.                |
 |                |                 |                                                                                     | `handleCart`       | Function. Passed to `<CartItem>`.                          |
+|                |                 |                                                                                     | `handleTheme`      | Function. Passed to `<Footer>`                             |
 |                |                 |                                                                                     | `handleTotalPrice` | Function. Passed to `<CartItem>`.                          |
 |                |                 |                                                                                     | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
 |                |                 |                                                                                     | `totalPrice`       | Number. Total price of all items currently in the cart.    |
@@ -44,9 +46,11 @@ Listed in alphabethical order.
 |                | `<Logo>`        | Website's logo                                                                      |                    |                                                            |
 |                | `<Shop>`        | Navigational button leading to the 'shop' page.                                     |                    |                                                            |
 | ProductPage.js | `<ProductPage>` | Page displaying product details and the button to buy a set quantity of the product | `handleCart`       | Function. Manipulates cart.                                |
+|                |                 |                                                                                     | `handleTheme`      | Function. Passed to `<Footer>`                             |
 |                |                 |                                                                                     | `handleTotalPrice` | Function. Manipulates total price.                         |
 |                |                 |                                                                                     | `theme`            | String. Decides page's colour palet. Passed to `<Footer>`. |
-| Shop.js        | `<Shop>`        | 'shop' page.                                                                        | `<theme>`          | String. Decides page's colour palet. Passed to `<Footer>`. |
+| Shop.js        | `<Shop>`        | 'shop' page.                                                                        | `handleTheme`      | Function. Passed to `<Footer>`                             |
+|                |                 |                                                                                     | `<theme>`          | String. Decides page's colour palet. Passed to `<Footer>`. |
 
 # Images
 
