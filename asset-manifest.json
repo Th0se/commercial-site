@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/commercial-site/static/css/main.bd74613b.css",
+    "main.js": "/commercial-site/static/js/main.f86809b0.js",
+    "static/media/pexels-engin-akyurt-2899682.jpg": "/commercial-site/static/media/pexels-engin-akyurt-2899682.172fa9824a8a42213b26.jpg",
+    "static/media/pexels-karolina-grabowska-4966362.jpg": "/commercial-site/static/media/pexels-karolina-grabowska-4966362.664aa4c92be1101c62e3.jpg",
+    "static/media/pexels-lisa-fotios-1231023.jpg": "/commercial-site/static/media/pexels-lisa-fotios-1231023.0d74082c3b766d716f83.jpg",
+    "static/media/pexels-julie-aagaard-2294477.jpg": "/commercial-site/static/media/pexels-julie-aagaard-2294477.60c12b61a64d4beee6b4.jpg",
+    "static/media/pexels-mark-stebnicki-2253316.jpg": "/commercial-site/static/media/pexels-mark-stebnicki-2253316.c4e19f7d9e7586cb9fb7.jpg",
+    "static/media/pexels-kaichieh-chan-708777.jpg": "/commercial-site/static/media/pexels-kaichieh-chan-708777.71082647738935260389.jpg",
+    "static/media/pexels-julie-aagaard-2294471.jpg": "/commercial-site/static/media/pexels-julie-aagaard-2294471.67523f7b1a9d2bb338d1.jpg",
+    "static/media/pexels-kio-1093038.jpg": "/commercial-site/static/media/pexels-kio-1093038.e5fb2a8731d303bd14d1.jpg",
+    "index.html": "/commercial-site/index.html",
+    "main.bd74613b.css.map": "/commercial-site/static/css/main.bd74613b.css.map",
+    "main.f86809b0.js.map": "/commercial-site/static/js/main.f86809b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd74613b.css",
+    "static/js/main.f86809b0.js"
+  ]
+}
