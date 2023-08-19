@@ -5,7 +5,7 @@ import Footer from './reusables/Footer';
 import Header from './reusables/Header';
 import { Link } from 'react-router-dom';
 
-const Shop = ({ theme }) => {
+const Shop = ({ theme, handleTheme }) => {
     return (
         <div
             data-theme={theme}
@@ -38,7 +38,10 @@ const Shop = ({ theme }) => {
                     ))}
                 </div>
             </main>
-            <Footer theme={theme}></Footer>
+            <Footer
+                theme={theme}
+                handleTheme={handleTheme}
+            ></Footer>
         </div>
     );
 };

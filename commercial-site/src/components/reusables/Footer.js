@@ -45,11 +45,46 @@ const Contact = ({ theme }) => {
     );
 };
 
-const Footer = ({ theme }) => {
+const Switch = ({ handleTheme }) => {
     return (
-        <footer className='p-4 md:grid md:grid-cols-2 md:gap-x-2'>
+        <div className='grid grid-rows-2 text-center border-text border-2 p-3'>
+            <p>Themes</p>
+            <div className='grid grid-rows-2 grid-cols-2 gap-2'>
+                <button
+                    onClick={handleTheme.light}
+                    className='border-text border-2 focus:bg-text focus:text-primaryBackground hover:bg-text hover:text-primaryBackground'
+                >
+                    Light Theme
+                </button>
+                <button
+                    onClick={handleTheme.dark}
+                    className='border-text border-2 focus:bg-text focus:text-primaryBackground hover:bg-text hover:text-primaryBackground'
+                >
+                    Dark Theme
+                </button>
+                <button
+                    onClick={handleTheme.pastelChaos}
+                    className='border-text border-2 focus:bg-text focus:text-primaryBackground hover:bg-text hover:text-primaryBackground'
+                >
+                    Pastel Chaos
+                </button>
+                <button
+                    onClick={handleTheme.amethystAurora}
+                    className='border-text border-2 focus:bg-text focus:text-primaryBackground hover:bg-text hover:text-primaryBackground'
+                >
+                    Amethyst Aurora
+                </button>
+            </div>
+        </div>
+    );
+};
+
+const Footer = ({ theme, handleTheme }) => {
+    return (
+        <footer className='p-4 md:grid md:grid-cols-3 md:gap-x-2'>
             <Disclaimer></Disclaimer>
             <Contact theme={theme}></Contact>
+            <Switch handleTheme={handleTheme}></Switch>
         </footer>
     );
 };

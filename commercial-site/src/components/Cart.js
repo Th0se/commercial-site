@@ -33,7 +33,14 @@ const CartItem = ({ item, handleCart, handleTotalPrice }) => {
     );
 };
 
-const Cart = ({ cart, theme, totalPrice, handleCart, handleTotalPrice }) => {
+const Cart = ({
+    cart,
+    theme,
+    totalPrice,
+    handleCart,
+    handleTotalPrice,
+    handleTheme,
+}) => {
     return (
         <div
             data-theme={theme}
@@ -75,7 +82,10 @@ const Cart = ({ cart, theme, totalPrice, handleCart, handleTotalPrice }) => {
                     </button>
                 </div>
             </main>
-            <Footer theme={theme}></Footer>
+            <Footer
+                theme={theme}
+                handleTheme={handleTheme}
+            ></Footer>
         </div>
     );
 };

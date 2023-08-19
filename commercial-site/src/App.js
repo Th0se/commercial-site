@@ -70,12 +70,22 @@ function App() {
         <BrowserRouter basename='/commercial-site'>
             <Routes>
                 <Route
-                    path='/about'
-                    element={<About theme={theme}></About>}
+                    path='/*'
+                    element={
+                        <About
+                            theme={theme}
+                            handleTheme={handleTheme}
+                        ></About>
+                    }
                 ></Route>
                 <Route
                     path='/shop'
-                    element={<Shop theme={theme}></Shop>}
+                    element={
+                        <Shop
+                            theme={theme}
+                            handleTheme={handleTheme}
+                        ></Shop>
+                    }
                 ></Route>
                 <Route
                     path='/cart'
@@ -86,6 +96,7 @@ function App() {
                             totalPrice={totalPrice}
                             handleTotalPrice={handleTotalPrice}
                             handleCart={handleCart}
+                            handleTheme={handleTheme}
                         ></Cart>
                     }
                 ></Route>
@@ -96,6 +107,7 @@ function App() {
                             theme={theme}
                             handleCart={handleCart}
                             handleTotalPrice={handleTotalPrice}
+                            handleTheme={handleTheme}
                         ></ProductPage>
                     }
                 ></Route>

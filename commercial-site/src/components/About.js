@@ -2,7 +2,7 @@
 
 import Header from './reusables/Header';
 import Footer from './reusables/Footer';
-const About = ({ theme }) => {
+const About = ({ theme, handleTheme }) => {
     return (
         <div
             data-theme={theme}
@@ -56,7 +56,10 @@ const About = ({ theme }) => {
                     </p>
                 </div>
             </main>
-            <Footer theme={theme}></Footer>
+            <Footer
+                theme={theme}
+                handleTheme={handleTheme}
+            ></Footer>
         </div>
     );
 };

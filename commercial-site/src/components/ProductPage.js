@@ -6,7 +6,7 @@ import soldItems from '../assets/data/soldItems';
 import Header from './reusables/Header';
 import Footer from './reusables/Footer';
 
-const ProductPage = ({ theme, handleCart, handleTotalPrice }) => {
+const ProductPage = ({ theme, handleCart, handleTotalPrice, handleTheme }) => {
     const { id } = useParams();
     const [quantity, setQuantity] = useState(0);
     const handleQuantity = (e) => {
@@ -74,7 +74,10 @@ const ProductPage = ({ theme, handleCart, handleTotalPrice }) => {
                     </div>
                 </div>
             </main>
-            <Footer theme={theme}></Footer>
+            <Footer
+                theme={theme}
+                handleTheme={handleTheme}
+            ></Footer>
         </div>
     );
 };
