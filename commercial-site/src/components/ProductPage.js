@@ -31,11 +31,7 @@ const ProductPage = ({ theme, handleCart, handleTotalPrice, handleTheme }) => {
                             alt={product.name}
                         ></img>
                     </div>
-<<<<<<< HEAD
-                    <div className='grid grid-rows-5 p-2 items-center'>
-=======
                     <div className='grid grid-rows-5 p-2 items-center sm:w-10/12'>
->>>>>>> 7bf4db5 (- Update dependencies to new versions.)
                         <p className='text-2xl'>
                             <strong>{product.name}</strong>
                         </p>
@@ -50,11 +46,7 @@ const ProductPage = ({ theme, handleCart, handleTotalPrice, handleTheme }) => {
                                 Enter desired quantity in kilos:
                             </label>
                             <input
-<<<<<<< HEAD
-                                className='text-primaryBackground sm:my-4 md:mx-4'
-=======
                                 className='text-primaryBackground sm:w-full sm:my-4 md:mx-4'
->>>>>>> 7bf4db5 (- Update dependencies to new versions.)
                                 type='number'
                                 id='quantity'
                                 value={quantity}
