@@ -4,6 +4,7 @@ import soldItems from '../assets/data/soldItems';
 import Footer from './reusables/Footer';
 import Header from './reusables/Header';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Shop = ({ theme, handleTheme }) => {
     return (
@@ -46,4 +47,8 @@ const Shop = ({ theme, handleTheme }) => {
     );
 };
 
+Shop.propTypes = {
+    theme: PropTypes.string.isRequired,
+    handleTheme: PropTypes.func.isRequired,
+};
 export default Shop;

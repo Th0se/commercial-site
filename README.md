@@ -1,2 +1,5 @@
+<!-- @format -->
+
 # shopping_cart
-Just a simple shopping cart to teach me some concept.
+
+Just a simple online shop to teach me some concept.

@@ -12,7 +12,6 @@ function App() {
     const handleCart = (() => {
         const add = (item) => {
             const existIndex = cart.findIndex((i) => i.id === item.id);
-
             if (existIndex !== -1) {
                 const updatedCart = [...cart];
                 updatedCart[existIndex] = {
@@ -26,7 +25,6 @@ function App() {
                 setCart([...cart, item]);
             }
         };
-
         const remove = (item) => {
             setCart(cart.filter((i) => i.id !== item.id));
         };
@@ -48,7 +46,6 @@ function App() {
         };
         return { add, reset, reduce };
     })();
-
     const [theme, setTheme] = useState('dark');
     const handleTheme = (() => {
         const light = () => {

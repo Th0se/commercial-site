@@ -5,6 +5,7 @@ import { useState } from 'react';
 import soldItems from '../assets/data/soldItems';
 import Header from './reusables/Header';
 import Footer from './reusables/Footer';
+import PropTypes from 'prop-types';
 
 const ProductPage = ({ theme, handleCart, handleTotalPrice, handleTheme }) => {
     const { id } = useParams();
@@ -80,6 +81,13 @@ const ProductPage = ({ theme, handleCart, handleTotalPrice, handleTheme }) => {
             ></Footer>
         </div>
     );
+};
+
+ProductPage.propTypes = {
+    theme: PropTypes.string.isRequired,
+    handleCart: PropTypes.func.isRequired,
+    handleTotalPrice: PropTypes.func.isRequired,
+    handleTheme: PropTypes.func.isRequired,
 };
 
 export default ProductPage;
