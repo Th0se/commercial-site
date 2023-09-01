@@ -9,6 +9,7 @@ These plugins are available:
     uses [Babel](https://babeljs.io/) for Fast Refresh. Default Vite plugin.
 -   [react-router](https://www.npmjs.com/package/react-router). 
     enables client-side routing.
+- gh-pages
 
 # TailwindCSS
 
