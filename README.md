@@ -2,4 +2,4 @@
 
 # shopping_cart
 
-Just a simple online shop to teach me some concept.
+An online shop webpage. See `commercialSite/README.md` for more detail.
